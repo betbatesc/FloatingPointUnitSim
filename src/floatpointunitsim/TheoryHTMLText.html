@@ -1,0 +1,21 @@
+<h3 class="centeredText" style="text-align: center;"><span style="color: #e34f26;"> FLOATING POINT ARITHMETIC </span></h3>
+<!-- This comment is visible only in the source editor -->
+<p>Programming languages support other kind of numbers than integers, these numbers are called reals in mathematics. Some examples are</p>
+<p>3.14159265... [pi]</p>
+<p>2.71828... [e]</p>
+<p>An alternative notation commonly used is called&nbsp; <em> scientific notation </em> and which has a single digit to the left of the decimal point. A number in scientific notation that has no leading zeros is said to be normalized, for example:</p>
+<p>3,155,760,000 <sub> ten </sub> can be represented in scientific notation as 3.15576x10 <sup> 9 </sup> (seconds in a typical century).</p>
+<p>In computer arithmetic such numbers are called&nbsp; <strong> floating point numbers </strong> because they represent numbers in which the binary point is not fixed unlike the integers.</p>
+<p>The programming language C uses the name&nbsp; <em> float </em> for such numbers and just as in scientific notation, numbers are represented as a single nonzero digit to the left of the point. In binary, the form is</p>
+<p style="text-align: center;">1.xxxxxxxx <sub> two </sub> x 2 <sup> yyyy </sup></p>
+<h4 class="centeredText" style="text-align: left;"><span style="color: #ff6600;"> FLOATING POINT REPRESENTATION </span></h4>
+<p>A typical floating point representation format is as follows</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="FloatingPointDiagrams.png" alt="Floating Point Representation" width="600" height="150" /></p>
+<p>&nbsp;</p>
+<p>Bias exponent means that the value represented by a floating point number is really</p>
+<p style="text-align: center;">(-1)<sup>5</sup> x (1 + fraction) x 2<sup>(Exponent - Bias)</sup></p>
+<p style="text-align: left;">Biased notation, with the bias being the number substracted from the normal, unsigned representation to determine the real value.</p>
+<p style="text-align: left;">There exists a compromise between the size of the fraction and the size of the exponent, this tradeoff is between <em>precision</em> and <em>range</em>: increasing the size of the fraction enhances the precision of the fraction, while incresing the size of the exponent increases the range of the numbers that can be represented.</p>
+<p style="text-align: left;">In general, floating point numbers are of the form</p>
+<p style="text-align: center;">(-1)<sup>s</sup> x</p>
+<p>&nbsp;</p>
